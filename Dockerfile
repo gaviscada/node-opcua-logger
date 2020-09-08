@@ -13,6 +13,9 @@ RUN git branch devcontainer
 
 RUN yarn install
 
+#Disable analyitics for this module
+ENV DISABLE_ANALYTICS=true
+
 CMD ["yarn", "run",  "start"]
 
 
